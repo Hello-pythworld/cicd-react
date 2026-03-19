@@ -43,7 +43,7 @@ jobs:
     - name: Configure AWS credentials (OIDC)
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        role-to-assume: ${{ "arn:aws:iam::984454381499:role/GitHubActions-React-S3DeployRole" }}
+        role-to-assume:  "arn:aws:iam::984454381499:role/GitHubActions-React-S3DeployRole"
         aws-region: ${{ ap-northeast-2 }}
 
     # 6. 빌드된 결과물을 S3에 배포(업로드)
